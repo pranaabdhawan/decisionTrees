@@ -259,7 +259,16 @@ def mdclassify(observation, tree):
                                 else: branch = tree.fb
                         return mdclassify(observation,branch)
 
+# Dealing with numerical outcomes
 
+def variance (rows):
+        if len(rows)==0: return 0
+        data = [float(row[len(row)-1]) for row in rows]
+        mean = sum(data)/len(data)
+        variance = sum([(d-mean)**2 for d in data])/len(data)
+        return variance
+
+#Pass in variance as the parameter to build tree
 
 
 
