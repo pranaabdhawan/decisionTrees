@@ -234,7 +234,7 @@ def sampletrain(cl):
 	cl.train('the quick brown fox jumps','good')
 
 
-
+## to add network support 
 
 
 
