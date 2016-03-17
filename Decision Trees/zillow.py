@@ -1,7 +1,7 @@
 import xml.dom.minidom
 import urllib2
 
-zwskey = "X1-ZWz1f79y0a6497_aau4b"
+zwskey = #YOUR API KEY
 
 
 def getaddressdata(address,city):
